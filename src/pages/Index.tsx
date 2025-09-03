@@ -34,47 +34,142 @@ const Index = () => {
         </div>
       </div>
 
-      {/* Results Section */}
-      <div className="py-20 bg-white">
+      {/* Pain Points Section */}
+      <div className="py-20 bg-gray-50">
         <div className="container mx-auto px-6">
-          <div className="max-w-6xl mx-auto">
+          <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                Результат уже через 2 часа
+              <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-gray-800">
+                Знакомая ситуация?
               </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Не годы обучения, не месяцы практики — конкретные изменения в вашей речи сегодня
+              <p className="text-2xl font-semibold text-red-600 mb-8">
+                Разочарование после первого занятия
               </p>
             </div>
             
-            <div className="grid md:grid-cols-3 gap-8">
-              <Card className="p-8 text-center hover:shadow-xl transition-all duration-300 border-none bg-gradient-to-br from-white to-gray-50">
-                <div className="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Icon name="Target" className="text-white" size={32} />
+            <div className="space-y-6 mb-16">
+              <Card className="p-6 bg-white border-l-4 border-red-500 hover:shadow-lg transition-all duration-300">
+                <div className="flex items-start gap-4">
+                  <div className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <Icon name="X" className="text-white" size={20} />
+                  </div>
+                  <div>
+                    <p className="text-lg text-gray-700">
+                      Вместо практики речи — 2 часа с пробкой во рту, читая скороговорки
+                    </p>
+                  </div>
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-gray-800">Мгновенное воздействие</h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Ваши слова начнут попадать точно в цель с первых минут применения техник
+              </Card>
+              
+              <Card className="p-6 bg-white border-l-4 border-red-500 hover:shadow-lg transition-all duration-300">
+                <div className="flex items-start gap-4">
+                  <div className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <Icon name="X" className="text-white" size={20} />
+                  </div>
+                  <div>
+                    <p className="text-lg text-gray-700">
+                      Вместо техник влияния — упражнения на ковриках для йоги "для раскрепощения"
+                    </p>
+                  </div>
+                </div>
+              </Card>
+              
+              <Card className="p-6 bg-white border-l-4 border-red-500 hover:shadow-lg transition-all duration-300">
+                <div className="flex items-start gap-4">
+                  <div className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <Icon name="X" className="text-white" size={20} />
+                  </div>
+                  <div>
+                    <p className="text-lg text-gray-700">
+                      Вместо авторских методик — те же упражнения, что вы видели на YouTube
+                    </p>
+                  </div>
+                </div>
+              </Card>
+              
+              <Card className="p-6 bg-white border-l-4 border-red-500 hover:shadow-lg transition-all duration-300">
+                <div className="flex items-start gap-4">
+                  <div className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <Icon name="X" className="text-white" size={20} />
+                  </div>
+                  <div>
+                    <p className="text-lg text-gray-700">
+                      Тренер без харизмы — сам говорит монотонно, не излучает энергию лидера
+                    </p>
+                  </div>
+                </div>
+              </Card>
+              
+              <Card className="p-6 bg-white border-l-4 border-red-500 hover:shadow-lg transition-all duration-300">
+                <div className="flex items-start gap-4">
+                  <div className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <Icon name="X" className="text-white" size={20} />
+                  </div>
+                  <div>
+                    <p className="text-lg text-gray-700">
+                      Театральная подача — красивые слова без практического результата
+                    </p>
+                  </div>
+                </div>
+              </Card>
+            </div>
+            
+            <Card className="p-8 bg-gradient-to-r from-red-50 to-orange-50 border border-red-200 text-center">
+              <div className="text-4xl mb-4">💸</div>
+              <p className="text-xl text-gray-700 font-semibold">
+                Вы потратили деньги, время, но изменений нет. Снова поиск "того самого" курса...
+              </p>
+            </Card>
+          </div>
+        </div>
+      </div>
+
+      {/* Solution Section */}
+      <div className="py-20 bg-white">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-4xl lg:text-5xl font-bold mb-8 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+              Решение: Пробный практикум
+            </h2>
+            
+            <div className="grid md:grid-cols-2 gap-8 mb-16">
+              <Card className="p-8 bg-gradient-to-br from-green-50 to-emerald-50 border border-green-200 hover:shadow-lg transition-all duration-300">
+                <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Icon name="UserCheck" className="text-white" size={32} />
+                </div>
+                <h3 className="text-2xl font-bold mb-4 text-gray-800">Приходите на пробное занятие</h3>
+                <p className="text-gray-600 text-lg">
+                  Я не буду продавать вам курс
                 </p>
               </Card>
               
-              <Card className="p-8 text-center hover:shadow-xl transition-all duration-300 border-none bg-gradient-to-br from-white to-gray-50">
-                <div className="w-16 h-16 bg-gradient-to-br from-secondary to-accent rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Icon name="Users" className="text-white" size={32} />
+              <Card className="p-8 bg-gradient-to-br from-blue-50 to-cyan-50 border border-blue-200 hover:shadow-lg transition-all duration-300">
+                <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Icon name="Zap" className="text-white" size={32} />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-gray-800">Внимание аудитории</h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Люди будут слушать вас с первого слова и до последнего
+                <h3 className="text-2xl font-bold mb-4 text-gray-800">Почувствуйте результат</h3>
+                <p className="text-gray-600 text-lg">
+                  Изменения в речи за 2 часа
                 </p>
               </Card>
               
-              <Card className="p-8 text-center hover:shadow-xl transition-all duration-300 border-none bg-gradient-to-br from-white to-gray-50">
-                <div className="w-16 h-16 bg-gradient-to-br from-accent to-primary rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Icon name="TrendingUp" className="text-white" size={32} />
+              <Card className="p-8 bg-gradient-to-br from-purple-50 to-violet-50 border border-purple-200 hover:shadow-lg transition-all duration-300">
+                <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-violet-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Icon name="CheckCircle" className="text-white" size={32} />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-gray-800">Карьерный рост</h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Убедительная речь открывает двери возможностей и повышений
+                <h3 className="text-2xl font-bold mb-4 text-gray-800">Сами решите</h3>
+                <p className="text-gray-600 text-lg">
+                  Подходит ли вам мой метод для полного погружения
+                </p>
+              </Card>
+              
+              <Card className="p-8 bg-gradient-to-br from-orange-50 to-red-50 border border-orange-200 hover:shadow-lg transition-all duration-300">
+                <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Icon name="Eye" className="text-white" size={32} />
+                </div>
+                <h3 className="text-2xl font-bold mb-4 text-gray-800">Увидите разницу</h3>
+                <p className="text-gray-600 text-lg">
+                  Между театральностью и реальной эффективностью
                 </p>
               </Card>
             </div>
