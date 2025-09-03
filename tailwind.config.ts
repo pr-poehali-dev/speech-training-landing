@@ -18,6 +18,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				sans: ['Montserrat', 'system-ui', 'sans-serif'],
+				display: ['Montserrat', 'system-ui', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -61,6 +65,18 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				energetic: {
+					DEFAULT: '#FF6B35',
+					foreground: '#FFFFFF'
+				},
+				success: {
+					DEFAULT: '#4338CA', 
+					foreground: '#FFFFFF'
+				},
+				dynamic: {
+					DEFAULT: '#10B981',
+					foreground: '#FFFFFF'
 				}
 			},
 			borderRadius: {
